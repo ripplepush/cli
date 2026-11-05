@@ -25,12 +25,14 @@ npx ripplepush send "Hello from Ripple"
 
 ## Send your first message
 
-Copy Inbox's send key from its menu in Ripple (**Copy send key**), then:
+Connect the CLI to your Ripple account. Your browser opens to approve it; over SSH, you get a link to open on any device and a code to type back:
 
 ```bash
-export RIPPLE_KEY=rpl_send_…
+ripple login
 ripple send --title "Hello from Ripple" "The first of many."
 ```
+
+Scripts and servers can use a key instead: set `RIPPLE_KEY` to a send key from a source's menu in Ripple (**Copy send key**), or an API token from **Settings → Developer**.
 
 Plain `ripple` shows every command, and each explains itself with `--help`.
 
