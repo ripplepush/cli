@@ -34,6 +34,8 @@ ripple send --title "Hello from Ripple" "The first of many."
 
 Scripts and servers can use a key instead: set `RIPPLE_KEY` to a send key from a source's menu in Ripple (**Copy send key**), or an API token from **Settings → Developer**.
 
+`ripple status` shows what the CLI is connected as, and checks that it works.
+
 Plain `ripple` shows every command, and each explains itself with `--help`.
 
 ## Update
