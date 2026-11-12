@@ -32,6 +32,12 @@ ripple login
 ripple send --title "Hello from Ripple" "The first of many."
 ```
 
+Add what a message needs, such as images, links, an alert, or a thread:
+
+```bash
+ripple send --image chart.png --title "Build 42 failed" --alert important "Coverage dropped to 71%"
+```
+
 Scripts and servers can use a key instead: set `RIPPLE_KEY` to a send key from a source's menu in Ripple (**Copy send key**), or an API token from **Settings → Developer**.
 
 `ripple status` shows what the CLI is connected as, and checks that it works.
